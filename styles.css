@@ -1,0 +1,192 @@
+:root {
+  padding: auto;
+  --page-background-color: #343c44;
+  --cash-drawer-color: #d1dada;
+  --cash-drawer-numbers-color: #1eae28;
+  --cash-drawer-borders-color: #929b9b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--page-background-color);
+}
+
+.main-heading,
+.cash-label,
+#purchase-btn {
+  font-family: "Orbitron", sans-serif;
+}
+
+.main-heading {
+  margin-bottom: 2rem;
+  font-size: 3.1rem;
+}
+
+.main-heading,
+.cash-label {
+  color: var(--cash-drawer-color);
+}
+
+.cash-label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+#cash {
+  height: 40px;
+  width: 250px;
+  font-size: 1.8rem;
+  padding: 0 0.8rem;
+}
+
+#cash:focus {
+  outline: none;
+  border: 2px solid var(--cash-drawer-numbers-color);
+}
+
+#purchase-btn {
+  margin: 3rem 0;
+  height: 50px;
+  width: 250px;
+  font-size: 1.6rem;
+  color: var(--cash-drawer-numbers-color);
+  border: 4px solid var(--cash-drawer-borders-color);
+  background-color: var(--cash-drawer-color);
+}
+
+#purchase-btn:hover {
+  cursor: pointer;
+}
+
+.cash-drawer-head {
+  width: 300px;
+  height: 80px;
+  padding: 1rem;
+}
+
+.cash-drawer-head,
+.cash-drawer-connector,
+.cash-drawer-body,
+.cash-drawer-bottom {
+  background-color: var(--cash-drawer-color);
+  border: 5px solid var(--cash-drawer-borders-color);
+}
+
+.cash-drawer-total-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--page-background-color);
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
+}
+
+.cash-drawer-text,
+#cash {
+  font-family: "Press Start 2P", system-ui;
+}
+
+.cash-drawer-text {
+  color: var(--cash-drawer-color);
+  padding: 0.4rem 0;
+}
+
+.cash-drawer-connector {
+  width: 50px;
+  height: 50px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.cash-drawer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  height: 350px;
+  margin-bottom: 1rem;
+  padding: 6rem 0.4rem;
+}
+
+.change-due-and-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-due-container {
+  width: 170px;
+  max-width: 170px;
+  height: 185px;
+  max-height: 185px;
+  margin-top: 7.5rem;
+}
+
+.change-due-status,
+.change-due-value {
+  font-size: 0.8rem;
+}
+
+.change-due-container,
+.cash-drawer-change {
+  background-color: var(--page-background-color);
+  border: 3px solid var(--cash-drawer-borders-color);
+}
+
+.cash-drawer-buttons {
+  margin-top: 0.5rem;
+}
+
+.cash-drawer-button {
+  display: inline-block;
+  margin: 0 0.1rem;
+  width: 20px;
+  height: 20px;
+  background-color: var(--page-background-color);
+  border: 3px solid var(--cash-drawer-borders-color);
+}
+
+.cash-drawer-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.cash-drawer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 70px;
+}
+
+.cash-drawer-bottom-circle {
+  clip-path: circle();
+  width: 30px;
+  height: 40px;
+  background-color: var(--page-background-color);
+}
+
+.cash-drawer-number {
+  color: var(--cash-drawer-numbers-color);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <h1 class="main-heading">Cash Register Project</h1>
+    <label for="cash" class="cash-label">Enter cash from customer:</label>
+    <input type="number" name="cash" id="cash" />
+    <button id="purchase-btn">Purchase</button>
+    <div class="cash-drawer-head">
+      <p class="cash-drawer-total-screen cash-drawer-text"></p>
+    </div>
+    <div class="cash-drawer-connector"></div>
+    <div class="cash-drawer-body">
+      <div class="change-due-and-buttons-container">
+        <div class="change-due-container">
+          <p id="change-due"></p>
+        </div>
+        <div class="cash-drawer-buttons">
+          <div class="cash-drawer-button-row">
+            <span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span>
+          </div>
+          <div class="cash-drawer-button-row">
+            <span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span>
+          </div>
+          <div class="cash-drawer-button-row">
+            <span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span
+            ><span class="cash-drawer-button"></span>
+          </div>
+        </div>
+      </div>
+      <div class="cash-drawer-change">
+        <p class="cash-drawer-text"><strong>Change in drawer:</strong></p>
+        <p class="cash-drawer-text">
+          Pennies: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Nickels: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Dimes: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Quarters: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Ones: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Fives: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Tens: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Twenties: <span class="cash-drawer-number"></span>
+        </p>
+        <p class="cash-drawer-text">
+          Hundreds: <span class="cash-drawer-number"></span>
+        </p>
+      </div>
+    </div>
+    <div class="cash-drawer-bottom">
+      <div class="cash-drawer-bottom-circle"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
